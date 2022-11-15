@@ -4,7 +4,7 @@ import { PersonCommand } from "./types";
 const generalCommands: string[] = [];
 
 const supreminhaaCommands = [PersonCommand.KADUHATER];
-const bleszerdCommands = [PersonCommand.KADUHATER];
+const bleszerdCommands = [PersonCommand.KADUHATER, PersonCommand.KADU];
 
 const nestedCommands: NestedCommands = {
   general: generalCommands,
