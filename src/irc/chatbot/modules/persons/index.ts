@@ -1,10 +1,10 @@
 import { NestedCommands } from "../../../core/types";
-import { GreetingsCommand } from "./types";
+import { PersonCommand } from "./types";
 
-const generalCommands = [GreetingsCommand.BOMDIA];
+const generalCommands: string[] = [];
 
-const supreminhaaCommands: string[] = [];
-const bleszerdCommands: string[] = [];
+const supreminhaaCommands = [PersonCommand.KADUHATER];
+const bleszerdCommands = [PersonCommand.KADUHATER];
 
 const nestedCommands: NestedCommands = {
   general: generalCommands,

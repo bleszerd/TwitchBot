@@ -9,7 +9,7 @@ class IRCConnector {
     this.botCredentials = credentials;
   }
 
-  public init(calkback: OnInitCallback) {
+  public init(callback: OnInitCallback) {
     const clientConfig = {
       channels: [this.botCredentials!.twitchChannel],
       identity: {
@@ -25,7 +25,7 @@ class IRCConnector {
       this.preventNodeExitLoop();
     });
 
-    calkback(this.client);
+    callback(this.client);
   }
 
   private preventNodeExitLoop() {
